@@ -10,7 +10,10 @@ const resumeRoutes = require("./routes/resumeRoutes");
 const app = express();
 
 app.use(cors({
-    origin: "https://ai-resume-analyzer-five-pearl-34.vercel.app",
+    origin: [
+        "http://localhost:5173",
+        "https://ai-resume-analyzer-five-pearl-34.vercel.app"
+    ],
     credentials: true
 }));
 app.use(express.json());
