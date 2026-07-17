@@ -1,4 +1,7 @@
 require("dotenv").config();
+
+console.log("MONGO CHECK:", process.env.MONGO_URI ? "FOUND" : "MISSING");
+
 const dns = require("dns");
 dns.setServers(["8.8.8.8", "8.8.4.4"]);
 const express = require("express");
