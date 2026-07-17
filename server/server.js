@@ -1,5 +1,5 @@
 require("dotenv").config();
-
+console.log("DEPLOY TEST 123");
 console.log("MONGO CHECK:", process.env.MONGO_URI ? "FOUND" : "MISSING");
 
 const dns = require("dns");
